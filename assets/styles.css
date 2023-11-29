@@ -1,16 +1,27 @@
 /* Custom properties */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    /* Fonts */
-
-
-
-    /* Colors */
+    /* Colors B & W */
     --black: #000;
-    --bg-color: #fefffe;
-    --bg-white-2: #f7f7f6;
-
-
+    --color-white: #fff;
+    --color-background: #f6f6f9;
+    --color-dark: #363949;
+    --color-dark-variant: #677483;
+    --color-info-dark: #7d8da1;
+    /* box-shadow */
+    --color-light: rgba(132, 139, 200, 0.18);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+    /* Blues */
+    --color-blue-sky: #9fc1d9;
+    --color-blue-soft: #346486;
+    --color-blue-marine: #223e76;
+    --color-blue-ocean: #142444;
+    /* Purples */
+    --color-purple-soft:#9E72C3;
+    --color-purple-normal:#924DBF;
+    --color-purple-softdark:#7338A0;
+    --color-purple-dark: #4A2574;
 }
 
 /* Reset */
@@ -32,8 +43,8 @@ html {
 body {
     overflow-x: hidden;
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
-
 
 img {
     max-width: 100%;
@@ -89,8 +100,9 @@ button:hover {
 }
 
 .container main {
-    height: 100vh;
-    background-color: var(--bg-white);
+    height: auto;
+    background-color: var(--color-background);
+    padding-left: 9rem;
 }
 
 .container footer {
@@ -100,7 +112,7 @@ button:hover {
 
 /* header */
 .sidebar {
-    background-color: #ffff;
+    background-color: var(--color-white);
     color: #000;
     position: fixed;
     height: 100vh;
@@ -118,4 +130,16 @@ nav ul {
 }
 
 nav li {
+}
+
+/* MAIN SECTION */
+
+section {
+    width: 80%;
+    height: 40vh;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 3.8rem;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
 }
