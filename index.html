@@ -4,34 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto IA RRHH</title>
-    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <div class="container">
         <div class="sidebar">
-            <header>
-                logo
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="#">Acerca De</a>
-                        </li>
-                        <li>
-                            <a href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+            <nav class="nav">
+                <div class="nav-logo center-flex">
+                    <a href="#" class="center-flex">Logo</a>
+                </div>
+
+                <!-- navlinks sin el hover -->
+                <div class="nav-links">
+                    <div class="link">
+                        <div class="link-img center-flex">
+                            <img src="./assets/find-professional-man-icon.svg" alt="Ofertas laborales">
+                        </div>
+                        <p class="center-flex">Ofertas laborales</p>
+                    </div>
+                    <div class="link">
+                        <div class="link-img center-flex">
+                            <img src="./assets/find-professional-man-icon.svg" alt="Colecciones">
+                        </div>
+                        <p class="center-flex">Colecciones</p>
+                    </div>
+                    <div class="link">
+                        <div class="link-img center-flex">
+                            <img src="./assets/find-professional-man-icon.svg" alt="Ofertas laborales">
+                        </div>
+                        <p class="center-flex">Resume parser</p> <!--Esta todo en español, esto para mi debería serlo también-->
+                    </div>
+                </div>
+
+                <!-- navlinks con el hover -->
+                <div class="nav-links-hover">
+                    <a href="#" class="link-hover">
+                        <div class="link-img-hover center-flex">
+                            <img src="./assets/house-icon.svg" alt="Inicio">
+                        </div>
+                        <p class="center-flex">Inicio</p>
+                    </a>
+
+                    <!-- <div class="link">
+                        <div class="link-img center-flex">
+                            <img src="./assets/find-professional-man-icon.svg" alt="Colecciones">
+                        </div>
+                        <p class="center-flex">caca 2</p>
+                    </div>
+                    <div class="link">
+                        <div class="link-img center-flex">
+                            <img src="./assets/find-professional-man-icon.svg" alt="Ofertas laborales">
+                        </div>
+                        <p class="center-flex">caca 3</p>
+                    </div> -->
+                </div>
+            </nav>
         </div>
         
         <main></main>
         <footer></footer>
     </div>
-</body>
 
-</footer>
+    <script src="js/script.js" type="module"></script>
+</body>
 </html>
