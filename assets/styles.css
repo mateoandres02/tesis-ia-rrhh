@@ -1,0 +1,145 @@
+/* Custom properties */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /* Colors B & W */
+    --black: #000;
+    --color-white: #fff;
+    --color-background: #f6f6f9;
+    --color-dark: #363949;
+    --color-dark-variant: #677483;
+    --color-info-dark: #7d8da1;
+    /* box-shadow */
+    --color-light: rgba(132, 139, 200, 0.18);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+    /* Blues */
+    --color-blue-sky: #9fc1d9;
+    --color-blue-soft: #346486;
+    --color-blue-marine: #223e76;
+    --color-blue-ocean: #142444;
+    /* Purples */
+    --color-purple-soft:#9E72C3;
+    --color-purple-normal:#924DBF;
+    --color-purple-softdark:#7338A0;
+    --color-purple-dark: #4A2574;
+}
+
+/* Reset */
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: var(--font);
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    transition: all .5s ease-out;
+}
+
+a:hover {
+    color: black;
+    font-size: 1.1rem;
+    opacity: 1;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button, input {
+    outline: none;
+    transition: opacity .5s ease-out;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+/*   */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container header {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.container main {
+    height: auto;
+    background-color: var(--color-background);
+    padding-left: 9rem;
+}
+
+.container footer {
+    height: 120px;
+    background-color: violet;
+}
+
+/* header */
+.sidebar {
+    background-color: var(--color-white);
+    color: #000;
+    position: fixed;
+    height: 100vh;
+    width: 6.5rem;
+    border: thin solid black;
+    
+}
+
+.sidebar a {
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+}
+
+/* MAIN SECTION */
+
+section {
+    width: 80%;
+    height: 40vh;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 3.8rem;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+}
