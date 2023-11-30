@@ -61,7 +61,6 @@ a {
 
 a:hover {
     color: black;
-    font-size: 1.1rem;
     opacity: 1;
 }
 
@@ -145,17 +144,20 @@ button:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 10vh
+    margin-top: 10vh;
 }
 
 .nav-links-hover {
     width: 100%;
+    /* height: auto; */
     height: 80vh;
     display: none;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     margin-top: 2vh;
+    /* border: 1px solid aqua; */
+    overflow-y: auto;
 }
 
 .link {
@@ -173,6 +175,7 @@ button:hover {
     display: flex;
     flex-direction: row;
     /* border: 1px solid red; */
+    
 }
 
 .link-img {
@@ -195,11 +198,49 @@ button:hover {
     font-weight: bold;
 }
 
+.nav-links a:hover ,
+.nav-links-hover a:hover {
+    background-color: var(--color-info-dark);
+}
+
+.nav-link-section {
+    /* margin: 1rem 0rem; */
+    width: 100%;
+    height: 25%;
+    /* border: 1px solid blue; */
+}
+
+.nav-link-section-title {
+    width: 100%;
+    height: 35%;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+}
+
+.nav-link-section-title p {
+    font-size: .9rem;
+    margin: 0;
+}
+
+.nav-links-section-ul {
+    width: 100%;
+    height: 65%;
+    /* border: 1px solid aqua; */
+}
+
+.nav-links-section-ul a {
+    width: 100%;
+    display: block;
+    padding-left: 3rem;
+}
+
 /* MAIN SECTION */
 
 main {
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding-left: 10%
 }
 
