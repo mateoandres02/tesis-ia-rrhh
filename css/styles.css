@@ -1,16 +1,29 @@
 /*** Custom properties ***/
 
 :root {
+    /* Colors B & W */
+    --black: #000;
+    --color-white: #fff;
+    --color-background: #f6f6f9;
+    --color-dark: #363949;
+    --color-dark-variant: #677483;
+    --color-info-dark: #7d8da1;
+    /* box-shadow */
+    --color-light: rgba(132, 139, 200, 0.18);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+    /* Blues */
+    --color-blue-sky: #9fc1d9;
+    --color-blue-soft: #346486;
+    --color-blue-marine: #223e76;
+    --color-blue-ocean: #142444;
+    /* Purples */
+    --color-purple-soft:#9E72C3;
+    --color-purple-normal:#924DBF;
+    --color-purple-softdark:#7338A0;
+    --color-purple-dark: #4A2574;
 
     /* Fonts */
-
-
-
-    /* Colors */
-    --black: #000;
-    --bg-color: #fefffe;
-    --bg-white-2: #f7f7f6;
-
+    --primary-font: 'Poppins', sans-serif;
 }
 
 /*** Reset ***/
@@ -19,7 +32,7 @@ html {
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-size: 16px;
-    font-family: var(--font);
+    font-family: var(--primary-font);
     padding: 0;
 }
 
@@ -33,11 +46,11 @@ body {
     overflow-x: hidden;
     margin: 0;
 }
-/* 
+
 img {
     max-width: 100%;
     height: auto;
-} */
+}
 
 a {
     text-decoration: none;
@@ -91,14 +104,18 @@ button:hover {
 .container {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar {
     width: 7%;
     height: 100vh;
     position: fixed;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     transition: width .1s ease-out;
+    z-index: 999;
+    background-color: #363949;
 }
 
 .sidebar:hover {
@@ -107,12 +124,12 @@ button:hover {
 
 .nav {
     height: 100%;
-    border: 1px solid aqua
+    /* border: 1px solid aqua */
 }
 
 .nav-logo {
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 8vh;
 }
 
@@ -155,7 +172,7 @@ button:hover {
     padding: .5rem;
     display: flex;
     flex-direction: row;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .link-img {
@@ -166,7 +183,7 @@ button:hover {
 
 .link-img-hover {
     margin-right: .8rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .link p {
@@ -180,4 +197,22 @@ button:hover {
 
 .link-hover a {
 
+}
+
+/* MAIN SECTION */
+
+main {
+    width: 100%;
+    border: 1px solid red;
+    padding-left: 10%
+}
+
+section {
+    width: 80%;
+    height: 40vh;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 3.8rem;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
 }
