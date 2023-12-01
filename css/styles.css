@@ -114,7 +114,7 @@ button:hover {
     /* border: 1px solid red; */
     transition: width .1s ease-out;
     z-index: 999;
-    background-color: #363949;
+    background-color: var(--color-blue-ocean);
 }
 
 .sidebar:hover {
@@ -179,7 +179,7 @@ button:hover {
 }
 
 .link-img {
-    height: 65%;
+    height: 25%;
     width: 100%;
     /* border: 1px solid red; */
 }
@@ -193,9 +193,14 @@ button:hover {
     height: 35%;
     /* border: 1px solid black; */
     text-align: center;
-    margin: 0;
-    font-size: .78rem;
+    margin-left: .5rem;
+    font-size: .74rem;
     font-weight: bold;
+    color: var(--color-blue-sky);
+}
+
+.link-hover p {
+    color: var(--color-blue-sky);
 }
 
 .nav-links a:hover ,
@@ -236,6 +241,9 @@ button:hover {
     padding-left: 3rem;
 }
 
+.svg-sidebar {
+    fill: #9E72C3;
+}
 /* MAIN SECTION */
 
 main {
