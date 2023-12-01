@@ -1,3 +1,4 @@
+// Modulos importados
 import { navlinks } from "./nav.js";
 
 const d = document;
