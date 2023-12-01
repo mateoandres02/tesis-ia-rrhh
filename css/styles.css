@@ -36,6 +36,20 @@ html {
     padding: 0;
 }
 
+html::-webkit-scrollbar {
+    width: 7.5px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--color-dark-variant);
+    border-radius: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: black;
+}
+
+
 *,
 *:after,
 *:before {
@@ -152,12 +166,17 @@ button:hover {
     /* height: auto; */
     height: 80vh;
     display: none;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     margin-top: 2vh;
     /* border: 1px solid aqua; */
     overflow-y: auto;
+}
+
+.nav-links-hover img {
+    width: 25px;
+    height: 25px;
 }
 
 .link {
@@ -201,6 +220,7 @@ button:hover {
 
 .link-hover p {
     color: var(--color-blue-sky);
+    font-size: .8rem;
 }
 
 .nav-links a:hover ,
@@ -227,6 +247,9 @@ button:hover {
 .nav-link-section-title p {
     font-size: .9rem;
     margin: 0;
+    color: var(--color-blue-sky);
+    font-weight: bold;
+    font-size: .8rem;
 }
 
 .nav-links-section-ul {
@@ -238,26 +261,58 @@ button:hover {
 .nav-links-section-ul a {
     width: 100%;
     display: block;
+    color: var(--color-blue-sky);
+    font-size: .8rem;
+    padding: .25rem 0rem;
     padding-left: 3rem;
 }
 
 .svg-sidebar {
     fill: #9E72C3;
 }
+
 /* MAIN SECTION */
 
 main {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     /* border: 1px solid red; */
-    padding-left: 10%
+    padding-left: 8%;
+    padding-right: 1%;
 }
 
 section {
-    width: 80%;
-    height: 40vh;
+    width: 100%;
+    height: 50vh;
     margin-top: 5rem;
-    margin-bottom: 5rem;
-    border-radius: 3.8rem;
+    margin-bottom: 2.5rem;
+    border: 2px solid black;
+    border-radius: 1rem;
     background-color: var(--color-white);
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
+    position: relative;
+}
+
+.section-title {
+    width: 100%;
+    text-align: center;
+    /* border: 1px solid red; */
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    /* right: 50%; */
+    top: -20px;
+}
+
+.section-title h2 {
+    width: auto;
+    margin: 0;
+    font-size: 1.3rem;
+    padding: 0 5rem;
+    display: inline-block;
+    /* border: 1px solid aqua; */
+    background-color: white;
 }
