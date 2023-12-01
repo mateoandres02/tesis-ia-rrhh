@@ -36,17 +36,16 @@ html {
     padding: 0;
 }
 
+/* Scroll Personalizado */
+
 html::-webkit-scrollbar {
     width: 7.5px;
+    background-color: var(--black);
 }
 
 html::-webkit-scrollbar-thumb {
     background: var(--color-dark-variant);
     border-radius: 1rem;
-}
-
-html::-webkit-scrollbar-track {
-    background: black;
 }
 
 
@@ -112,14 +111,15 @@ button:hover {
 
 /*** Site properties ***/
 
-/* sidebar */
-
 .container {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
 }
+
+/* sidebar */
+
 
 .sidebar {
     width: 7%;
@@ -134,6 +134,8 @@ button:hover {
 .sidebar:hover {
     width: 15%;
 }
+
+
 
 .nav {
     height: 100%;
@@ -172,6 +174,16 @@ button:hover {
     margin-top: 2vh;
     /* border: 1px solid aqua; */
     overflow-y: auto;
+}
+
+.nav-links-hover::-webkit-scrollbar {
+    background-color: var(--color-blue-ocean);
+    width: 7.5px;
+}
+
+.nav-links-hover::-webkit-scrollbar-thumb {
+    background-color: var(--color-blue-sky);
+    border-radius: 1rem;
 }
 
 .nav-links-hover img {
