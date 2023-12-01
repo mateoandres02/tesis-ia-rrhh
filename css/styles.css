@@ -49,7 +49,6 @@ html::-webkit-scrollbar-track {
     background: black;
 }
 
-
 *,
 *:after,
 *:before {
@@ -173,6 +172,20 @@ button:hover {
     /* border: 1px solid aqua; */
     overflow-y: auto;
 }
+
+.nav-links-hover::-webkit-scrollbar {
+    width: 7.5px;
+}
+
+.nav-links-hover::-webkit-scrollbar-thumb {
+    background: var(--color-blue-sky);
+    border-radius: 1rem;
+}
+
+.nav-links-hover::-webkit-scrollbar-track {
+    background: var(--color-blue-ocean);
+}
+
 
 .nav-links-hover img {
     width: 25px;
